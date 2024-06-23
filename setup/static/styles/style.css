@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Reset de listas */
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* Reset de links */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Reset de imagens */
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Reset de cabeçalhos */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  /* Reset de parágrafos */
+  p {
+    margin: 0;
+  }
+  
+  /* Reset de tabelas */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Reset de células de tabela */
+  th,
+  td {
+    padding: 0.25em;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  /* Reset de formulários */
+  input,
+  textarea,
+  select {
+    margin: 0;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Reset de botões */
+  button {
+    margin: 0;
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  :root{
+    --cor-de-fundo: #FAF871;
+    --cor-do-sobre: #FAC11E;
+    --cor-do-instalacoes: #ABFA1E;
+    --cor-do-orcamento: #FAF61E;
+    --cor-do-preto:#000000;
+    --cor-do-branco: #ffffff;
+    --cor-do-whatsapp: #25D366;
+  }
+
+
+  .background-fundo{
+    background-color: var(--cor-de-fundo);
+    
+  }
+
+  .caixinha-sobre{
+    background-color: var(--cor-do-sobre);
+    border-radius: 10px;
+  }
+
+  .caixinha-instalacoes{
+    background-color: var(--cor-do-instalacoes);
+    border-radius: 10px;
+  }
+
+  .caixinha-orcamento{
+    background-color: var(--cor-do-orcamento);
+    border-radius: 10px;
+  }
+
+.branco{
+    background-color: var(--cor-do-branco);
+    border-radius: 10px;
+}
+
+.preto{
+    color: var(--cor-do-preto);
+}
+
+.verde-whatsapp{
+    color: var(--cor-do-whatsapp);
+}

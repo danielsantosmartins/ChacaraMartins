@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Reset de listas */
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* Reset de links */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Reset de imagens */
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Reset de cabeçalhos */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  /* Reset de parágrafos */
+  p {
+    margin: 0;
+  }
+  
+  /* Reset de tabelas */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Reset de células de tabela */
+  th,
+  td {
+    padding: 0.25em;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  /* Reset de formulários */
+  input,
+  textarea,
+  select {
+    margin: 0;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Reset de botões */
+  button {
+    margin: 0;
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  :root{
+    --cor-de-fundo: #FAF871;
+    --cor-do-sobre: #FAC11E;
+    --cor-do-instalacoes: #ABFA1E;
+    --cor-do-orcamento: #FAF61E;
+    --cor-do-preto:#000000;
+    --cor-do-branco: #ffffff;
+  }
+
+
+  .background-fundo{
+    color: var(--cor-de-fundo);
+  }
+
+  .caixinha-sobre{
+    color: var(--cor-do-sobre);
+  }
+
+  .caixinha-instalacoes{
+    color: var(--cor-do-instalacoes);
+  }
+
+  .caixinha-orcamento{
+    color: var(--cor-do-orcamento);
+  }
+
+.preto{
+    color: var(--cor-do-preto);
+}
+
+.branco{
+    color: var(--cor-do-branco);
+}
