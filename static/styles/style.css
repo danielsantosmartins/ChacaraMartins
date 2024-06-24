@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'angrybirds-regular';
+  src: url('/setup/static/fonts/angrybirds-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -76,29 +83,49 @@
     --cor-do-orcamento: #FAF61E;
     --cor-do-preto:#000000;
     --cor-do-branco: #ffffff;
+    --cor-do-whatsapp: #25D366;
   }
 
 
+body {
+    font-family: 'angrybirds-regular', sans-serif;
+}
+
   .background-fundo{
-    color: var(--cor-de-fundo);
+    background-color: var(--cor-de-fundo);
+    
   }
 
   .caixinha-sobre{
-    color: var(--cor-do-sobre);
+    background-color: var(--cor-do-sobre);
+    border-radius: 15px;
   }
 
   .caixinha-instalacoes{
-    color: var(--cor-do-instalacoes);
+    background-color: var(--cor-do-instalacoes);
+    border-radius: 15px;
   }
 
   .caixinha-orcamento{
-    color: var(--cor-do-orcamento);
+    background-color: var(--cor-do-orcamento);
+    border-radius: 15px;
   }
+
+.branco{
+    background-color: var(--cor-do-branco);
+    border-radius: 15px;
+}
 
 .preto{
     color: var(--cor-do-preto);
 }
 
-.branco{
-    color: var(--cor-do-branco);
+.verde-whatsapp{
+    color: var(--cor-do-whatsapp);
 }
+
+.div-inferior{
+  margin-bottom: -2%;
+}
+
+
