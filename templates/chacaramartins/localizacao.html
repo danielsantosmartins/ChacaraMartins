@@ -1,0 +1,16 @@
+{% extends 'chacaramartins/base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <div class="d-flex flex-column align-items-center mt-2 pt-5">
+        <div class="mx-4 mt-lg-5 mt-2 pt-lg-5 p-2"><h2>LOCALIZAÇÃO</h2></div>
+        <div class="mx-4 mt-1 pt-1 px-2"><p>Estamos localizados em:</p></div>
+        <div class="mx-4 mt-1 pt-1 px-2">
+            <iframe class="rounded-4 d-none d-lg-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.3053358609072!2d-46.92748110529028!3d-23.34095000846825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf19d9f02b039d%3A0xd7a9d4c615f0e476!2sCh%C3%A1cara%20Martins!5e0!3m2!1spt-BR!2sbr!4v1719277882245!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe class="rounded-4 d-block d-lg-none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.3051745973867!2d-46.93014812549668!3d-23.34095585353027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf19d9f02b039d%3A0xd7a9d4c615f0e476!2sCh%C3%A1cara%20Martins!5e0!3m2!1spt-BR!2sbr!4v1719279394847!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</main>
+{% endblock %}

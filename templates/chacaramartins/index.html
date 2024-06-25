@@ -1,0 +1,37 @@
+{% extends 'chacaramartins/base.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <div class="d-flex flex-column">
+            <div class="ms-4 me-0 div-inferior z-3 ">
+                <img class="branco" src="{% static '/assets/Piscina_1_banner.jpeg' %}" alt="foto da piscina">
+            </div>
+            <div class="caixinha-sobre ms-5 me-3 div-inferior z-2">
+                <div class="pt-5 pb-2 px-3">
+                    <h2>SOBRE NÓS</h2>
+                </div>
+                <div class="pt-0 pb-4 px-3">
+                    <p>A Chácara Martins se destaca como um oásis de alegria e lazer, pronta para receber seus eventos com exclusividade e charme. Mais do que um simples espaço para festas, a chácara oferece uma experiência completa, abraçando seus sonhos e transformando-os em memórias inesquecíveis.</p>
+                </div>
+            </div>
+            <div class="caixinha-instalacoes ms-3 me-5 div-inferior z-1">
+                <div class="pt-5 pb-2 px-3">
+                    <h2>O ESPAÇO</h2>
+                </div>
+                <div class="pt-0 pb-4 px-3">
+                    <p>a Chácara Martins oferece quartos aconchegantes para acomodar até 30 pessoas. A área externa, por sua vez, é um convite para relaxar e aproveitar a natureza em sua plenitude. Uma piscina cristalina convida a mergulhos refrescantes, enquanto a churrasqueira garante um churrasco delicioso para animar a festa.</p>
+                </div>
+            </div>
+            <div class="div-inferior container d-flex justify-content-center">
+                <div class="flex-row">
+                    <div class="flex-col"><img class="rounded-4 object-fit-cover" src="{% static '/assets/Patio_sm.jpeg' %}" alt="foto do Patio"></div>
+                    <div class="flex-col"><img class="rounded-4 object-fit-cover" src="{% static '/assets/Churrasco_sm.jpeg' %}" alt="foto da Churrasqueira"></div>
+                </div>
+                <div class="flex-row"> 
+                    <div class="flex-col"><img class="rounded-4 object-fit-cover" src="{% static '/assets/Pebolim_sm.jpeg' %}" alt="foto do Pebolim"></div>
+                    <div class="flex-col"><img class="rounded-4 " src="{% static '/assets/Sinuca_sm.jpeg' %}" alt="foto da Sinuca"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
