@@ -1,18 +1,13 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "buildCommand": "python manage.py collectstatic --noinput",
-        "distDir": "static",
-        "env": {
-          "NODE_ENV": "production"
-        }
-      }
-    ],
+    "builds": [{
+        "src": "setup/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    }],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "setup/wsgi.py"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "setup/wsgi.py"
+        }
     ]
-  }
+}
