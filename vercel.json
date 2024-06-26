@@ -1,21 +1,13 @@
 {
-    "version": 2,
-    "builders": [{
-      "name": "python",
-      "command": "python manage.py collectstatic --noinput",
-      "working_dir": "setup"
+    "builds": [{
+        "src": "setup/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
     }],
-    "routes": [{
-      "src": "/static/*",
-      "dest": "public/static"
-    }],
-    "functions": [{
-      "name": "main",
-      "source": "setup/wsgi.py",
-      "handler": "wsgi.handler",
-      "runtime": "python3.8",
-      "environment": {
-        "DJANGO_SETTINGS_MODULE": "setup.settings.production"
-      }
-    }]
-  }
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "setup/wsgi.py"
+        }
+    ]
+}
