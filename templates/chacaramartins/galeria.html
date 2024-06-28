@@ -1,4 +1,18 @@
 {% extends 'chacaramartins/base.html' %}
 {% load static %}
 {% block content %}
+<main class="mt-2 pt-5">
+    
+        <div class="d-flex flex-column align-items-center mx-4 mt-lg-5 mt-2 pt-lg-5 p-2">
+            {% if cards %}
+            {% for fotografias in cards %}
+            <div class="card rounded-4" style="width: 18rem;">
+                <img src="{% static '/assets/images/'%}{{fotografias.foto}}" class="card-img-top rounded-4" alt="{{fotografias.titulo}}">
+            </div>
+            {% endfor %}
+            {% else %}
+            {% endif %}
+        </div>
+
+</main>
 {% endblock %}
